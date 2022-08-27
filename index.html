@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <!-- a tag head providencia informações gerais (metadados) sobre o documento, incluindo seu título e links para scripts e folhas de estilos.-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!--sempre chama o css desse modelo que esta acima no documento html.-->
+    <title>Calculadora</title>
+</head>
+<body>
+    <!-- a tag body representa o conteúdo de um documento HTML-->
+   <div class="fundo">
+      <h1>Emylli Thayane</h1>
+      <div class="calculadora">
+          <h1>Calculadora</h1>
+          <p id="resultado"></p>
+          <table>
+            <tr>
+                <td><button class="botao" onclick="clean()">C</button></td>
+                <td><button class="botao" onclick="back()"><</button></td>
+                <td><button class="botao" onclick="insert('/')">/</button></td>
+                <td><button class="botao" onclick="insert('*')">X</button></td>
+            </tr>
+            <tr>
+                <th><button class="botao" onclick="insert('7')">7</button></th> 
+                <th><button class="botao" onclick="insert('8')">8</button></th>
+                <th><button class="botao" onclick="insert('9')">9</button></th>
+                <th><button class="botao" onclick="insert('-')">-</button></th>
+            </tr>
+            <tr>
+                <th><button class="botao" onclick="insert('4')">4</button></th>
+                <th><button class="botao" onclick="insert('5')">5</button></th>
+                <th><button class="botao" onclick="insert('6')">6</button></th>
+                <th><button class="botao" onclick="insert('+')">+</button></th>
+            </tr>
+            <tr>
+                <th><button class="botao" onclick="insert('1')">1</button></th>
+                <th><button class="botao" onclick="insert('2')">2</button></th>
+                <th><button class="botao" onclick="insert('3')">3</button></th>
+                <th rowspan="2"><button class="botao" style="height: 106px;" onclick="calcular()">=</button></th>
+            </tr>
+            <tr>
+                <th colspan="2"><button class="botao" style="width: 106px;" onclick="insert('0')" onclick="insert('0')">0</button></th>
+                <th><button class="botao" onclick="insert('.')">.</button></th>
+            </tr>
+                  
+
+
+    
+
+
+
+
+          </table>
+
+
+      </div>
+
+       
+
+        
+
+
+   </div>
+    <!-- a tag div Ele pode ser utilizado para agrupar elementos para fins de estilos (usando class ou id), ou porque eles compartilham valores de atributos, como lang. -->
+    
+</body>
+<!--sempre linkar o javascript na principal do html e no final do body-->
+<script src="script.js"></script>
+
+</html>
